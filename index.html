@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="./assets/Images/favicon.png" />
+    <title>Dipak_Portfolio</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      input:checked ~ .dot {
+        transform: translateX(100%);
+        background-color: #0ea5e9;
+      }
+
+      input:checked ~ .block {
+        background-color: #11ce14c9;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-white font-sans"
+  >
+    <header class="fixed w-full bg-gray-800 text-white shadow-md z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4"
+      >
+        <h1 class="text-2xl font-bold">Dipak Darade</h1>
+        <div class="flex items-center space-x-2">
+          <span class="text-sm text-white dark:text-gray-900">🌙</span>
+
+          <!--  Change Theme-->
+          <label
+            for="themeChange"
+            class="cursor-pointer relative inline-block w-12 h-6"
+          >
+            <input type="checkbox" id="themeChange" class="sr-only" />
+            <div class="block bg-gray-600 w-full h-full rounded-full"></div>
+            <div
+              class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition transform"
+            ></div>
+          </label>
+
+          <span class="text-sm text-white dark:text-gray-900">☀️</span>
+        </div>
+
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="links">Home</a>
+          <a href="#about" class="links">About</a>
+          <a href="#skills" class="links">Skills</a>
+          <a href="#projects" class="links">Projects</a>
+          <a href="#certifications" class="links">Certifications</a >
+          <a href="#contact" class="links">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section
+  id="home"
+  class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-4 md:gap-8 px-6 md:px-10 pt-16 md:pt-28 bg-gray-900 dark:bg-white text-white dark:text-gray-900 transition-all"
+>
+  <div class="flex-1 text-center md:text-left space-y-4">
+    <h2 class="text-3xl md:text-5xl font-bold leading-snug">
+      Hi, I'm <span class="text-cyan-400">Dipak</span>
+    </h2>
+    <p class="text-xl md:text-2xl text-gray-400">Java Full Stack Developer</p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mt-6">
+      <a
+        href="./assets/Documents/Dipak_Java_Resume.pdf"
+        download
+        class="resume-button">
+        Download Resume
+      </a>
+      <a
+        href="./assets/Documents/Dipak_Java_Resume.pdf"
+        target="_blank"
+        class="resume-button">
+        View Resume
+      </a>
+    </div>
+  </div>
+
+  <!-- Profile Image -->
+  <div class="flex-1 flex justify-center">
+    <img
+      src="./assets/Images/profilePic.jpg"
+      alt="Dipak Image"
+      class="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover shadow-md transform transition duration-500 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-lime-400" />
+  </div>
+</section>
+
+    <section
+      id="about"
+      class="py-20 px-4 md:px-20 bg-gray-900 dark:bg-white text-white dark:text-gray-900" >
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold mb-6 text-center text-cyan-400">
+          About Me
+        </h2>
+
+        <p class="text-lg leading-relaxed text-justify">
+          Hi, I'm <span class="font-semibold text-cyan-300">Dipak Darade</span>,
+          a dedicated and detail-oriented Full Stack Web Developer with a strong
+          foundation in both frontend and backend technologies. I specialize in
+          Java, Spring Boot, React, MongoDB, and MySQL. <br /><br />
+          I’m currently working at
+          <span class="font-semibold text-cyan-300">Flynaut SaaS Pvt. Ltd.</span
+          >, where I’ve gained hands-on experience building scalable web
+          applications and collaborating on real-world projects. <br /><br />
+          I’m now actively exploring better opportunities where I can take on
+          more challenging roles, grow as a developer, and contribute
+          meaningfully to product development and innovation.
+        </p>
+      </div>
+    </section>
+   <section
+  id="skills"
+  class="py-20 px-4 md:px-20 bg-gray-800 dark:bg-gray-100 text-white dark:text-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-10">
+      Skills
+    </h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <!-- Skill Card -->
+      <div class="skill-card">
+        <p class="text-lg font-semibold">HTML</p>
+        <progress value="95" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">CSS</p>
+        <progress value="90" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">JavaScript</p>
+        <progress value="85" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">React.js</p>
+        <progress value="80" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">Java</p>
+        <progress value="90" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">Spring Boot</p>
+        <progress value="85" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">MySQL</p>
+        <progress value="80" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">MongoDB</p>
+        <progress value="75" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">Git & GitHub</p>
+        <progress value="85" max="100" class="progress-bar"></progress>
+      </div>
+
+      <div class="skill-card">
+        <p class="text-lg font-semibold">Postman API</p>
+        <progress value="80" max="100" class="progress-bar"></progress>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section
+      id="projects"
+      class="py-20 px-4 md:px-20 bg-gray-900 dark:bg-white text-white dark:text-gray-900">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-10">
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card -->
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">
+              E-Commerce App
+            </h3>
+            <p class="text-sm mb-3">
+              An online shopping platform built with HTML,CSS,JS, Node.js,
+              Express & MongoDB.
+            </p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              An online shopping platform with dynamic product listings, cart,
+              and checkout flow. Built using HTML, CSS, JavaScript on frontend
+              and MongoDB, Express.js, and Node.js for backend. It features user
+              authentication, admin product control, and secure order placement.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/MyEcom"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a>
+              <a
+                href="https://ecom-0zeo.onrender.com"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >Live Demo (available)</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">ToDo-App</h3>
+            <p class="text-sm mb-3">A task manager built using React Hooks.</p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              Add, delete, and check tasks with localStorage persistence.
+              Functional and modular component structure.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/TodoApp_React"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">
+              Employee-Management
+            </h3>
+            <p class="text-sm mb-3">
+              HR dashboard for employee CRUD operations and data tracking.
+            </p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              Built using Spring Boot, JPA, and MySQL. Includes REST APIs,
+              pagination, and form validations. Used Postman for testing.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/Java-Projects/tree/main/Employee"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">
+              Weather-App
+            </h3>
+            <p class="text-sm mb-3">
+              Weather forecast app using OpenWeather API.
+            </p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              Displays current temperature, location-based search, and weather
+              icons. Styled with custom CSS and JavaScript fetch logic.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/Library-management/tree/master/OneDrive/Desktop/weather%20App"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">Calculator</h3>
+            <p class="text-sm mb-3">
+              A simple calculator UI with functional logic.
+            </p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              Supports basic operations like +, −, ×, ÷ and input handling.
+              Clean design and mobile responsive.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/Calculator"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="text-xl font-semibold mb-2 text-cyan-400">
+              Library-management
+            </h3>
+            <p class="text-sm mb-3">
+              Backend system for managing library books and borrowers.
+            </p>
+            <p class="text-sm text-gray-400 dark:text-gray-600 mb-4">
+              Spring Boot REST APIs for book entry, student borrowing, and
+              return tracking. Uses MySQL with relational mappings.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/Dipakdarade/Library-management/tree/master/OneDrive/Desktop/LibraryManagementProject"
+                target="_blank"
+                class="text-sm text-cyan-400 hover:underline"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section
+      id="certifications"
+      class="py-20 px-4 md:px-20 bg-gray-800 dark:bg-gray-100 text-white dark:text-gray-900"
+    >
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-10"
+        >
+          Certificates
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="certificate-card">
+          <h3 class="text-lg font-semibold">Bacholors of Engineering</h3>
+          <p class="text-sm mt-2 text-gray-300 dark:text-gray-700">
+            Issued by Pune University
+          </p>
+          <a
+            href="./assets/Documents/BE_Certificate.pdf"
+            target="_blank"
+            class="text-sm text-cyan-400 hover:underline"
+            >See Certificate</a
+          >
+        </div>
+
+        <div class="certificate-card">
+          <h3 class="text-lg font-semibold">Full Stack Development</h3>
+          <p class="text-sm mt-2 text-gray-300 dark:text-gray-700">
+            Issued by Coding Blocks
+          </p>
+          <a
+            href="./assets/Documents/FullStackDev_Certificate.pdf"
+            target="_blank"
+            class="text-sm text-cyan-400 hover:underline"
+            >See Certificate</a
+          >
+        </div>
+
+        <div class="certificate-card">
+          <h3 class="text-lg font-semibold">Java with Spring Boot</h3>
+          <p class="text-sm mt-2 text-gray-300 dark:text-gray-700">
+            Issued by Flynaut Training
+          </p>
+          <a
+            href="./assets/Documents/Dipak_IJP_Clearance_Certif.pdf"
+            target="_blank"
+            class="text-sm text-cyan-400 hover:underline"
+            >See Certificate</a
+          >
+        </div>
+
+        <!-- Coming Soon -->
+        <div class="certificate-card">
+          <h3 class="text-lg font-semibold">More Certificates</h3>
+          <p class="text-sm mt-2 text-gray-300 dark:text-gray-700">
+            Will be added soon...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20 px-4 md:px-20 bg-gray-900 dark:bg-white text-white dark:text-gray-900">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-10">Contact Me</h2>
+
+    <div class="grid gap-6 md:grid-cols-2 text-left">
+
+      <!-- Phone -->
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-phone text-cyan-400 text-xl"></i>
+        <a href="tel:+917218616699" class="text-lg hover:text-cyan-400">+917218616699</a>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-envelope text-cyan-400 text-xl"></i>
+        <a href="mailto:dipakdarade699@gmail.com" target="_blank" class="text-lg hover:text-cyan-400">dipakdarade699@gmail.com</a>
+      </div>
+
+      <!-- Instagram Link-->
+      <div class="flex items-center space-x-4">
+        <i class="fab fa-instagram text-cyan-400 text-xl"></i>
+        <a href="https://instagram.com/dipak_6699" target="_blank" class="text-lg hover:text-cyan-400">@dipak_6699</a>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="flex items-center space-x-4">
+        <i class="fab fa-whatsapp text-cyan-400 text-xl"></i>
+        <a href="https://wa.me/917218616699" target="_blank" class="text-lg hover:text-cyan-400">WhatsApp Me</a>
+      </div>
+    </div>
+</section>
+<section id="message" class="py-20 px-4 md:px-20 bg-gray-800 dark:bg-gray-100 text-white dark:text-gray-900">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-10">Send Message</h2>
+
+    <form action="https://formsubmit.co/dipakdarade699@gmail.com" method="POST" class="space-y-6">
+      <!-- Name -->
+      <div>
+        <label for="name" class="block mb-2 font-semibold">Name</label>
+        <input type="text" name="name" id="name" required placeholder="Your Name"
+          class="form-input"/>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block mb-2 font-semibold">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Your Email"
+          class="form-input"/>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message" class="block mb-2 font-semibold">Message</label>
+        <textarea name="message" id="message" rows="5" required placeholder="Write your message..."
+          class="form-input"></textarea>
+      </div>
+      <!-- Submit -->
+      <button type="submit"
+        class="px-6 py-3 bg-cyan-400 hover:bg-cyan-500 text-white dark:text-gray-900 font-semibold rounded-lg transition">
+        Send Message
+      </button>
+    </form>
+  </div>
+
+</section>
+<footer class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-6 px-4 text-center">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-sm">&copy; 2025 Dipak Darade. All rights reserved.</p>
+
+    <div class="mt-4 flex justify-center space-x-6">
+      <a href="https://github.com/Dipakdarade" target="_blank"  class="hover:text-cyan-400 text-lg">
+        <i class="fab fa-github"title="GitHub"></i>
+      </a>
+      <a href="https://linkedin.com/in/dipak-darade-b52b87219" target="_blank" class="hover:text-cyan-400 text-lg">
+        <i class="fab fa-linkedin" title="linkedin"></i>
+      </a>
+      <a href="mailto:dipakdarade699@gmail.com" class="hover:text-cyan-400 text-lg">
+        <i class="fas fa-envelope" title="Email"></i>
+      </a>
+      <a href="https://wa.me/917218616699" target="_blank" class="hover:text-cyan-400 text-lg">
+        <i class="fab fa-whatsapp" title="WhatsApp"></i>
+      </a>
+    </div>
+
+    <p class="text-xs mt-4">
+      Built with ❤️ using HTML, Tailwind CSS, and JavaScript.
+    </p>
+  </div>
+</footer>
+<!-- ------------------------------------------------------------------------------------------------- -->
+    <script>
+      const toggleSwitch = document.getElementById("themeChange");
+      const html = document.documentElement;
+
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        toggleSwitch.checked = true;
+      }
+      toggleSwitch.addEventListener("change", () => {
+        if (toggleSwitch.checked) {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+      });
+</script>
+  </body>
+</html>

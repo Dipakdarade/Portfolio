@@ -1,0 +1,22 @@
+# Tailwind generated output CSS
+/dist/output.css
+
+# Node modules (if you used Tailwind via npm)
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# OS-specific
+*.swp
+
+# Env/config secrets (just in case)
+.env
